@@ -2,13 +2,13 @@
 
 This code book summarizes the resulting data fields in `tidyData.txt`.
 
-##Identifiers
+## Identifiers
 
 * 'activities'
 * 'subjects'
 
 
-##Measurements
+## Measurements
 
 * 'tbodyacc-mean-x'
 * 'tbodyacc-mean-y'
