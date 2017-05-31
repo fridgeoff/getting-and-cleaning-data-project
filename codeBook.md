@@ -1,20 +1,6 @@
 # Code Book
 
-This code book contains information of the raw data, transformations performed, and the summarizing of the resulting data fields in `tidyData.txt`.
-
-
-## The run_analysis.R script
-
-1. The first action of the script is that it checks if the raw data has been downloaded and extracted into work directory. If not, the script performs said actions.
-2. Loads the features and activity_labels into data frames.
-3. Assigns the row number of mean and std values in features data frame to a new vector.
-4. Loads the test and training data sets (of the row numbers discussed in point 3) into data frames.
-5. Merges the test and training data set, using rbind.
-6. Replaces the numerical value of "activities" with their descriptive character values from activity_labels.
-7. Creates a function, tidy.mean, to calculate the column means of a data.frame (with exception of the first two columns).
-8. Applies function in point 7, to values corresponding to each "activities" and "subjects", in order to the get the average of each value of "activities" and "subjects", and assigns it to a new data.frame, tiny.data.
-9. Writes the data of the tidy.data data frame to a new file named tidyData.txt
-
+This code book summarizes the resulting data fields in `tidyData.txt` and how to acquire the raw data.
 
 ## Identifiers
 
