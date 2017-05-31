@@ -28,7 +28,7 @@ features[,2]<-as.character(features[,2])
 featuresIndex<-grep(".*std.*|.*mean.*",features[,2])
 featuresTarget<-features[featuresIndex,2]
 featuresTarget<-gsub("[(-)]","",featuresTarget)
-featuresTarget<-
+featuresTarget<-tolower(featuresTarget)
 
 ###Loading the datasets 
 train<-read.table(paste(UCI,"/train/X_train.txt",sep=""))[featuresIndex]
